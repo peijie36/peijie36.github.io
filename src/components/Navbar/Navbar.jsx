@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
     return (
@@ -10,10 +11,18 @@ const Navbar = () => {
                     </h3>
                 </div>
                 <div className="items-center hidden space-x-10 lg:flex px-7">
-                    <a className="nav-item">Home</a>
-                    <a className="nav-item">Projects</a>
-                    <a className="nav-item">Skills</a>
-                    <a className="nav-item">Contact</a>
+                    <Link to="home" smooth={true} duration={500} className="nav-item">
+                        Home
+                    </Link>
+                    <Link to="projects" smooth={true} duration={500} className="nav-item">
+                        Projects
+                    </Link>
+                    <Link to="skills" smooth={true} duration={500} className="nav-item">
+                        Skills
+                    </Link>
+                    <Link to="contact" smooth={true} duration={500} className="nav-item">
+                        Contact
+                    </Link>
                 </div>
             </nav>
         </>
