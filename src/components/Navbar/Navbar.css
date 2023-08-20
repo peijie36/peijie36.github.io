@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .nav-item {
+    @apply flex text-gray-600 hover:text-blue-500 cursor-pointer transition-colors duration-300;
+  }
+}
