@@ -8,8 +8,8 @@ const Home = () => {
                 <h1 className="text-4xl sm:text-7xl font-bold text-black">
                     Peijie Zheng
                 </h1>
-                <h2 className="text-3xl sm:text-7xl font-bold text-[#8892b0]">
-                    Full Stack Developer
+                <h2 className="text-xl sm:text-4xl font-bold text-[#9a9ca0]">
+                    Software Developer
                 </h2>
             </div>
         </div>
