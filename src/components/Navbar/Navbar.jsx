@@ -8,7 +8,7 @@ const Navbar = () => {
                 <h3 className="text-4xl font-semibold text-blue-500 px-3">
                     PJ
                 </h3>
-                <div className="items-stretch hidden space-x-7 lg:flex px-3">
+                <div className="items-center hidden space-x-7 lg:flex px-3">
                     <Link to="home" smooth={true} duration={500} className="nav-item">
                         Home
                     </Link>
