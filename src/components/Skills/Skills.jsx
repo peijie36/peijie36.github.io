@@ -4,7 +4,7 @@ import "./Skills.css"
 const Skills = () => {
   return (
       <div className="flex flex-col m-auto justify-normal w-full">
-          <h2 className="text-4xl text-left font-semibold text-blue-500 mb-7 mr-32 underline underline-offset-8">
+          <h2 className="text-4xl text-left font-semibold text-[#646cff] mb-7 mr-32 underline underline-offset-8">
               Skills
           </h2>
           <div className="w-full flex flex-row justify-between mb-48">

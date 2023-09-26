@@ -1,5 +1,3 @@
-
-
 const languages = ["Java", "JavaScript", "Python", "C++", "Bash"]
 
 const webDev = ["HTML", "CSS", "JavaScript", "ReactJS", "ExpressJS", "Tailwind CSS"]
