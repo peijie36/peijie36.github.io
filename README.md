@@ -1,3 +1,3 @@
-# Portfolio Website
+# Portfolio
 
-This is my portfolio website built with React + Tailwind
+My portfolio website built with React + Tailwind
