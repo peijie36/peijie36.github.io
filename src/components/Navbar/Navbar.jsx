@@ -8,7 +8,7 @@ const Navbar = () => {
                 <h3 className="text-4xl font-semibold text-blue-500 px-3">
                     PJ
                 </h3>
-                <div className="items-center hidden space-x-7 lg:flex px-3">
+                <div className="items-stretch hidden space-x-7 lg:flex px-3">
                     <Link to="home" smooth={true} duration={500} className="nav-item">
                         Home
                     </Link>
@@ -21,7 +21,7 @@ const Navbar = () => {
                     <Link to="contact" smooth={true} duration={500} className="nav-item">
                         Contact
                     </Link>
-                    <button className="nav-item">Resume</button>
+                    <a href="https://docs.google.com/document/d/1P_sBHxMnYutmrKi9vUwcY7lhT76ZQAu5/edit?usp=sharing&ouid=110044716830580026864&rtpof=true&sd=true"><button className="nav-item">Resume</button></a>
                 </div>
             </nav>
         </>

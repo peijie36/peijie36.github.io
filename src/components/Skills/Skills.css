@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .column-container {
+    @apply block border border-black rounded-xl basis-0 grow px-7 justify-center w-96 h-auto hover:scale-110 duration-150;
+  }
+
+  .container-header {
+    @apply text-3xl font-semibold px-3 my-1
+  }
+}
