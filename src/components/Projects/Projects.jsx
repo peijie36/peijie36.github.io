@@ -1,10 +1,7 @@
+import React from "react";
 
 const Projects = () => {
-    return (
-        <div name="projects">
-            
-        </div>
-    );
-}
+    return <div name="projects"></div>;
+};
 
-export default Projects
+export default Projects;
