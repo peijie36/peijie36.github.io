@@ -5,7 +5,7 @@ const Navbar = () => {
     const resumeLink = "https://drive.google.com/file/d/1QV0TWZT8Ls_PWRKo3_Q2g9qleE_v2GHt/view?usp=sharing"
     return (
         <>
-            <nav className="flex justify-around m-auto py-3 bg-white/80 backdrop-blur-md shadow-md fixed w-full top-0 left-0 right-0 z-10">
+            <nav className="flex justify-around m-auto py-3 bg-white/80 backdrop-blur-md shadow-md fixed w-screen top-0 left-0 right-0 z-10">
                 <h3 className="text-4xl font-semibold text-[#646cff] px-3">
                     PJ
                 </h3>
