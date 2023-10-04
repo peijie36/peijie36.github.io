@@ -1,6 +1,6 @@
 const languages = ["Java", "JavaScript", "Python", "C++", "Bash"]
 
-const webDev = ["HTML", "CSS", "JavaScript", "ReactJS", "ExpressJS", "Tailwind CSS"]
+const webDev = ["HTML", "CSS", "JavaScript", "React", "ExpressJS", "Tailwind CSS"]
 
 const techTools = ["Git", "MongoDB", "Firebase", "Azure", "Jest"]
 

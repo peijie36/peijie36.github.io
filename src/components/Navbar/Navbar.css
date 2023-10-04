@@ -5,6 +5,6 @@
 
 @layer components {
   .nav-item {
-    @apply flex text-gray-600 hover:text-blue-600 cursor-pointer transition-colors duration-200;
+    @apply capitalize text-gray-600 font-semibold hover:text-[#646cff] hover:scale-110 cursor-pointer transition-colors duration-200;
   }
 }

@@ -1,29 +1,54 @@
+import { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
+import { FaBars, FaTimes } from "react-icons/fa"
 
 const Navbar = () => {
     const resumeLink = "https://drive.google.com/file/d/1QV0TWZT8Ls_PWRKo3_Q2g9qleE_v2GHt/view?usp=sharing"
+    const navItems = ["home", "projects", "skills", "contact"]
+
+    /* const [openMobileNav, setOpenMobileNav] = useState(false); */
+
     return (
         <>
-            <nav className="flex justify-around m-auto py-3 bg-white/80 backdrop-blur-md shadow-md fixed w-screen top-0 left-0 right-0 z-10">
-                <h3 className="text-4xl font-semibold text-[#646cff] px-3">
+            <nav className="flex justify-around items-center py-3 bg-white/80 backdrop-blur-md shadow-md fixed w-full top-0 left-0 right-0 z-10">
+                <h3 className="text-5xl font-semibold text-[#646cff] px-3">
                     PJ
                 </h3>
-                <div className="items-center hidden space-x-7 lg:flex px-3">
-                    <Link to="home" smooth={true} duration={500} className="nav-item">
-                        Home
-                    </Link>
-                    <Link to="projects" smooth={true} duration={500} className="nav-item">
-                        Projects
-                    </Link>
-                    <Link to="skills" smooth={true} duration={500} className="nav-item">
-                        Skills
-                    </Link>
-                    <Link to="contact" smooth={true} duration={500} className="nav-item">
-                        Contact
-                    </Link>
-                    <a href= {resumeLink} target="_blank" rel="noreferrer"><button className="nav-item">Resume</button></a>
+                <div className="hidden items-center space-x-7 md:flex px-3">
+                    {navItems.map((item) => (
+                        <Link
+                            key={item}
+                            to={item}
+                            smooth={true}
+                            duration={500}
+                            className="nav-item"
+                        >
+                            {item}
+                        </Link>
+                    ))}
+                    <a href={resumeLink} target="_blank" rel="noreferrer">
+                        <button className="nav-item bg-transparent font-semibold border rounded-md py-2 px-4">
+                            Resume
+                        </button>
+                    </a>
                 </div>
+
+                {/* Mobile Hamburger Nav
+                <div onClick={() => setOpenMobileNav(!openMobileNav)} className="cursor-pointer z-10 md:hidden">
+                    { openMobileNav ? <FaBars size={30} /> : <FaBars size={30} /> }
+                </div>
+                <div className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen">
+                    {navItems.map((item) => (
+                        <Link key={item} to={item} smooth={true} duration={500} className="nav-item">
+                            {item}
+                        </Link>
+                    ))}
+                    <a href= {resumeLink} target="_blank" rel="noreferrer">
+                        <button className="nav-item">Resume</button>
+                    </a>
+                </div>
+                */}
             </nav>
         </>
     );

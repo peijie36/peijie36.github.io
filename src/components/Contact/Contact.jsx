@@ -7,7 +7,9 @@ const Contact = () => {
                 Feel free to reach out about anything
             </h2>
             <a href={mailtoLink} target="_blank" rel="noreferrer">
-                <button>peijie36@uw.edu</button>
+                <button className="font-semibold border rounded-full py-2 px-7 hover:scale-105 hover:text-[#646cff]">
+                    peijie36@uw.edu
+                </button>
             </a>
         </div>
     );
