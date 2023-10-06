@@ -17,8 +17,9 @@ const projects = [
     {
         name: "Moments",
         img: placeholder,
+        techStack: ["React", "Firebase"],
         description:
-            "a responsive web application using React that allows users to view and share photos in real time",
+            "A responsive web application using React that allows users to view and share photos in real time. Users can browse photos/ artworks with the option to filter by categories. Additionally, they can search by specific usernames to view their profiles and portfolios.",
         src: "https://github.com/peijie36/Moments",
     },
 ];
