@@ -1,4 +1,4 @@
-import {languages, webDev, techTools} from "@src/Info"
+import { languages, webDev, techTools } from "src/Info";
 import "./Skills.css"
 
 const Skills = () => {
