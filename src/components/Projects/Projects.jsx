@@ -3,7 +3,7 @@ import ProjectCard from "src/components/ProjectCard/ProjectCard";
 
 const Projects = () => {
     return (
-        <div name="projects" className="flex flex-col m-auto pt-24 justify-normal w-full md:h-screen">
+        <div name="projects" className="flex flex-col m-auto sm:pt-24 justify-normal w-full md:h-screen">
             <h2 className="text-3xl text-left font-semibold text-[#646cff] mb-7 mr-32 underline underline-offset-8">
                 Projects
             </h2>

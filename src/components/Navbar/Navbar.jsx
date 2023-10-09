@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="flex justify-around items-center py-3 bg-white/80 backdrop-blur-md shadow-md fixed w-full top-0 left-0 right-0 z-10">
+            <nav className="flex sm:justify-around items-center py-3 bg-white/80 backdrop-blur-md shadow-md fixed w-full top-0 left-0 right-0 z-10">
                 <h3 className="text-5xl font-semibold text-[#646cff] px-3">
                     PJ
                 </h3>

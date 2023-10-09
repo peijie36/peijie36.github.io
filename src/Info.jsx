@@ -1,6 +1,6 @@
 import placeholder from "src/assets/placeholder.jpg";
 
-const languages = ["Java", "JavaScript", "Python", "C++", "Bash"];
+const languages = ["Java", "JavaScript", "Python", "HTML", "CSS", "Bash"];
 
 const webDev = [
     "HTML",
@@ -11,7 +11,7 @@ const webDev = [
     "Tailwind CSS",
 ];
 
-const techTools = ["Git", "MongoDB", "Firebase", "Azure", "Jest"];
+const techTools = ["Git", "MongoDB", "Firebase", "Azure", "Postman", "Jest"];
 
 const projects = [
     {
