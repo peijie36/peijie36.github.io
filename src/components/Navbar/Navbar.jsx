@@ -1,10 +1,11 @@
 import { useState } from "react";
-import "./Navbar.css";
 import { Link } from "react-scroll";
-import { FaBars, FaTimes } from "react-icons/fa"
+import { FaBars, FaTimes } from "react-icons/fa";
+import { resumeLink } from "src/Info";
+import "./Navbar.css";
 
 const Navbar = () => {
-    const resumeLink = "https://drive.google.com/file/d/1QV0TWZT8Ls_PWRKo3_Q2g9qleE_v2GHt/view?usp=sharing"
+
     const navItems = ["home", "projects", "skills", "contact"]
 
     /* const [openMobileNav, setOpenMobileNav] = useState(false); */
@@ -17,13 +18,7 @@ const Navbar = () => {
                 </h3>
                 <div className="hidden items-center space-x-7 md:flex px-3">
                     {navItems.map((item) => (
-                        <Link
-                            key={item}
-                            to={item}
-                            smooth={true}
-                            duration={500}
-                            className="nav-item"
-                        >
+                        <Link key={item} to={item} smooth={true} duration={500} className="nav-item">
                             {item}
                         </Link>
                     ))}

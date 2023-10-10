@@ -3,11 +3,11 @@ import ProjectCard from "src/components/ProjectCard/ProjectCard";
 
 const Projects = () => {
     return (
-        <div name="projects" className="flex flex-col m-auto sm:pt-24 justify-normal w-full md:h-screen">
+        <div name="projects" className="flex flex-col m-auto sm:pt-20 justify-normal w-full ">
             <h2 className="text-3xl text-left font-semibold text-[#646cff] mb-7 mr-32 underline underline-offset-8">
-                Projects
+                PROJECTS
             </h2>
-            <div className="max-w-screen-lg p-4 mx-auto flex flex-wrap">
+            <div className="max-w-screen-lg h-atuo p-4 mx-auto flex flex-wrap justify-center">
                 {projects.map((project) => (
                     <ProjectCard key={project.name} project={project} />
                 ))}

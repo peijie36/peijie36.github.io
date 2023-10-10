@@ -8,7 +8,7 @@
   }
 
   .container-header {
-    @apply text-3xl font-semibold px-3 my-1
+    @apply text-3xl font-semibold pt-2 pb-3
   }
 
   .list-item {

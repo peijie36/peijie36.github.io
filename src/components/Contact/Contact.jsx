@@ -1,7 +1,7 @@
 const Contact = () => {
     const mailtoLink = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=peijie36@uw.edu"
     return (
-        <div name="contact" className="sm:pt-24">
+        <div name="contact" className="sm:pt-16 pb-7">
             <h1 className="text-5xl font-semibold mb-3">Get In Touch!</h1>
             <h2 className="text-xl font-normal mb-2">
                 Feel free to reach out about anything
