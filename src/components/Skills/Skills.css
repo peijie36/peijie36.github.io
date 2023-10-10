@@ -4,7 +4,7 @@
 
 @layer components {
   .column-container {
-    @apply block border border-black rounded-xl px-7 m-3 w-96;
+    @apply block border border-black rounded-xl m-3 max-md:w-80 w-96;
   }
 
   .container-header {

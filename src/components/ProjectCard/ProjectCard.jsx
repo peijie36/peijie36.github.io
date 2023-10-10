@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = ( { project } ) => {
     return (
-        <div className="flex flex-col md:flex-row border-4 border-black/10 rounded-lg mb-9 max-w-11/12">
+        <div className="flex flex-col md:flex-row border-4 border-black/10 rounded-lg mb-9">
             <img
                 src={project.img}
                 alt={`cover photo for ${project.name}`}
