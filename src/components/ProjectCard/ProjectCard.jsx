@@ -5,15 +5,15 @@ import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = ( { project } ) => {
     return (
-        <div className="flex flex-col sm:flex-row border-4 border-black/10 rounded-lg mb-9 w-12/13">
+        <div className="flex flex-col md:flex-row border-4 border-black/10 rounded-lg mb-9 w-12/13">
             <img
                 src={project.img}
                 alt={`cover photo for ${project.name}`}
-                className="scale-90 sm:scale-95"
+                className="scale-95 max-w-lg max-h-md"
             />
             <div className="flex flex-col justify-between">
                 <h1 className="text-3xl sm:text-4xl font-semibold py-1">{project.name}</h1>
-                <p className="p-3 text-left text-md sm:text-lg">{project.description}</p>
+                <p className="p-3 text-left text-lg">{project.description}</p>
                 <div className="flex flex-col items-center">
                     <ul className="mt-3 sm:mt-7 flex flex-row justify-center items-end">
                         {project.techStack.map((tech) => (

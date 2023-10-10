@@ -1,3 +1,4 @@
+import momentsCover from "src/assets/moments.jpg";
 import placeholder from "src/assets/placeholder.jpg";
 
 const resumeLink = "https://drive.google.com/file/d/1QV0TWZT8Ls_PWRKo3_Q2g9qleE_v2GHt/view?usp=sharing"
@@ -32,7 +33,7 @@ const techTools = [
 const projects = [
     {
         name: "Moments",
-        img: placeholder,
+        img: momentsCover,
         techStack: ["React", "Firebase"],
         description:
             "A responsive web application using React that allows users to view and share photos in real time. Users can browse photos/artworks with the option to filter by categories. Additionally, they can search by specific usernames to view their profiles and portfolios.",
@@ -40,4 +41,5 @@ const projects = [
     },
 ];
 
-export { resumeLink, languages, webDev, techTools, projects };
+export { languages, projects, resumeLink, techTools, webDev };
+

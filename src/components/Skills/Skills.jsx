@@ -8,7 +8,7 @@ const Skills = () => {
             <h2 className="text-3xl text-left font-semibold text-[#646cff] mb-7 mr-32 underline underline-offset-8">
                 SKILLS
             </h2>
-            <div className="flex flex-col max-sm:items-center sm:flex-row min-h-full mb-36 sm:mb-48">
+            <div className="flex flex-col max-md:items-center md:flex-row min-h-full mb-36 sm:mb-48">
                 <div className="column-container">
                     <h3 className="container-header">Languages</h3>
                     <ul className="flex flex-col mb-7 list-outside">

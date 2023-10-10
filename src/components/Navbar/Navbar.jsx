@@ -1,8 +1,8 @@
-import { useState } from "react";
 import { Link } from "react-scroll";
-import { FaBars, FaTimes } from "react-icons/fa";
 import { resumeLink } from "src/Info";
 import "./Navbar.css";
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
 
@@ -23,7 +23,7 @@ const Navbar = () => {
                         </Link>
                     ))}
                     <a href={resumeLink} target="_blank" rel="noreferrer">
-                        <button className="nav-item bg-transparent font-semibold border rounded-md py-2 px-4">
+                        <button className="nav-item bg-transparent font-semibold border-2 rounded-md py-2 px-4">
                             Resume
                         </button>
                     </a>
