@@ -9,7 +9,7 @@ const ProjectCard = ( { project } ) => {
             <img
                 src={project.img}
                 alt={`cover photo for ${project.name}`}
-                className="scale-[.97] max:md:self-center max-sm:w-full max-w-[500px] rounded-md"
+                className="scale-[.97] max-md:self-center max-sm:w-full max-w-[500px] rounded-md"
             />
             <div className="flex flex-col justify-between">
                 <h1 className="text-3xl sm:text-4xl font-semibold py-1">{project.name}</h1>
