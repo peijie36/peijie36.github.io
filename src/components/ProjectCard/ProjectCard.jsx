@@ -9,11 +9,11 @@ const ProjectCard = ( { project } ) => {
             <img
                 src={project.img}
                 alt={`cover photo for ${project.name}`}
-                className="scale-95 self-center max-sm:w-11/12 max-w-lg"
+                className="scale-95 max:sm:self-center max-sm:w-full max-sm:p-2 max-w-[500px]"
             />
             <div className="flex flex-col justify-between">
                 <h1 className="text-3xl sm:text-4xl font-semibold py-1">{project.name}</h1>
-                <p className="p-3 text-left text-lg">{project.description}</p>
+                <p className="p-2 text-left text-lg">{project.description}</p>
                 <div className="flex flex-col items-center">
                     <ul className="mt-3 sm:mt-7 flex flex-row justify-center items-end">
                         {project.techStack.map((tech) => (
