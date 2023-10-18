@@ -12,6 +12,6 @@
   }
 
   .list-item {
-    @apply py-2 hover:scale-125 duration-200
+    @apply py-2 hover:scale-125 hover:font-medium duration-200
   }
 }

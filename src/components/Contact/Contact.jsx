@@ -9,7 +9,7 @@ const Contact = () => {
                 Feel free to reach out for inquiries, opportunities, or anything else
             </h2>
             <a href={mailtoLink} target="_blank" rel="noreferrer">
-                <button className="text-lg font-semibold border border-neutral-400 rounded-full py-2 px-5 hover:scale-105 hover:text-[#646cff] duration-100">
+                <button className="text-lg font-semibold border-2 border-[#646cff] rounded-full py-2 px-5 hover:scale-105 hover:text-[#646cff] duration-100">
                     <div className="flex flex-row items-start">
                         <AiOutlineMail size={22} className="m-1" />
                         peijie36@uw.edu

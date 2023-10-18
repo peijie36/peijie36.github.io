@@ -23,8 +23,8 @@ const Navbar = () => {
                         </Link>
                     ))}
                     <a href={resumeLink} target="_blank" rel="noreferrer">
-                        <button className="nav-item bg-transparent font-semibold border-2 rounded-md py-2 px-4">
-                            Resume
+                        <button className="resume-btn">
+                            <span>Resume</span>
                         </button>
                     </a>
                 </div>
