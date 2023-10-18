@@ -8,10 +8,18 @@
   }
 
   .container-header {
-    @apply text-3xl font-semibold pt-2 pb-3
+    @apply text-2xl sm:text-3xl font-semibold pt-2 pb-3
   }
 
   .list-item {
     @apply py-2 hover:scale-125 hover:font-medium duration-200
+  }
+
+  .item {
+    @apply flex justify-center items-center
+  }
+
+  .item-text {
+    @apply text-[1rem] sm:text-lg px-3
   }
 }

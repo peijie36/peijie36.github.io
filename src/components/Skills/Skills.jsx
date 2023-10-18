@@ -14,9 +14,9 @@ const Skills = () => {
                     <ul className="flex flex-col mb-7 list-outside">
                         {languages.map((language) => (
                             <li key={uniqid()} className="list-item">
-                                <div className="flex justify-center items-center">
+                                <div className="item">
                                     {language.icon}
-                                    <span className="text-lg px-3">
+                                    <span className="item-text">
                                         {language.name}
                                     </span>
                                 </div>
@@ -29,9 +29,9 @@ const Skills = () => {
                     <ul className="mb-7">
                         {webDev.map((tool) => (
                             <li key={uniqid()} className="list-item">
-                                <div className="flex justify-center items-center">
+                                <div className="item">
                                     {tool.icon}
-                                    <span className="text-lg px-3">
+                                    <span className="item-text">
                                         {tool.name}
                                     </span>
                                 </div>
@@ -44,9 +44,9 @@ const Skills = () => {
                     <ul className="mb-7">
                         {techTools.map((tool) => (
                             <li key={uniqid()} className="list-item">
-                                <div className="flex justify-center items-center">
+                                <div className="item">
                                     {tool.icon}
-                                    <span className="text-lg px-3">
+                                    <span className="text-[1rem] sm:text-lg px-3">
                                         {tool.name}
                                     </span>
                                 </div>
