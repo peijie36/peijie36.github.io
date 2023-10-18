@@ -21,7 +21,7 @@ const ProjectCard = ( { project } ) => {
                         ))}
                     </ul>
                     <a href="https://github.com/peijie36/Moments" target="_blank" rel="noreferrer" className="self-center py-2">
-                        <FaGithub size={35} className="hover:scale-125 duration-150"/>
+                        <FaGithub size={35} className="hover:scale-125 duration-[125ms]"/>
                     </a>
                 </div>
             </div>
