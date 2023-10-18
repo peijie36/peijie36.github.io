@@ -9,7 +9,7 @@ const ProjectCard = ( { project } ) => {
             <img
                 src={project.img}
                 alt={`cover photo for ${project.name}`}
-                className="scale-95 max-sm:max-w-md max-w-lg"
+                className="scale-95 self-center max-sm:w-11/12 max-w-lg"
             />
             <div className="flex flex-col justify-between">
                 <h1 className="text-3xl sm:text-4xl font-semibold py-1">{project.name}</h1>
@@ -21,7 +21,7 @@ const ProjectCard = ( { project } ) => {
                         ))}
                     </ul>
                     <a href="https://github.com/peijie36/Moments" target="_blank" rel="noreferrer" className="self-center py-2">
-                        <FaGithub size={35} className="hover:scale-125 duration-[125ms]"/>
+                        <FaGithub size={36} className="hover:scale-125 duration-[125ms]"/>
                     </a>
                 </div>
             </div>
