@@ -4,11 +4,14 @@
 
 @layer components {
     .nav-item {
-        @apply capitalize text-gray-600 font-semibold hover:text-[#646cff] hover:scale-105 cursor-pointer transition-transform duration-150;
+        @apply capitalize text-gray-600 font-semibold cursor-pointer hover:text-[#646cff] hover:scale-105 transition-transform duration-150;
     }
     .resume-btn {
         @apply capitalize text-gray-600 font-semibold hover:text-[#646cff] hover:scale-105 cursor-pointer transition-all duration-150
         bg-transparent border-2 border-[#646cff] rounded-md py-2 px-4;
+    }
+    .mobile-nav-item {
+        @apply capitalize text-gray-600 text-lg font-bold py-[0.35rem]
     }
 }
 

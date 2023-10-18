@@ -8,15 +8,16 @@ const Navbar = () => {
 
     const navItems = ["home", "projects", "skills", "contact"]
 
-    /* const [openMobileNav, setOpenMobileNav] = useState(false); */
+     const [openMobileNav, setOpenMobileNav] = useState(false);
 
     return (
         <>
-            <nav className="flex sm:justify-around items-center py-3 bg-white/80 backdrop-blur-md shadow-md fixed w-full top-0 left-0 right-0 z-10">
+            <nav className="flex max-sm:justify-between justify-around items-center py-3 bg-white/80 backdrop-blur-md
+            shadow-md fixed w-full top-0 left-0 right-0 z-10">
                 <h3 className="text-5xl font-semibold text-[#646cff] px-3">
                     PJ
                 </h3>
-                <div className="hidden items-center space-x-7 md:flex px-3">
+                <div className="hidden items-center space-x-7 sm:flex px-3">
                     {navItems.map((item) => (
                         <Link key={item} to={item} smooth={true} duration={500} className="nav-item">
                             {item}
@@ -29,21 +30,23 @@ const Navbar = () => {
                     </a>
                 </div>
 
-                {/* Mobile Hamburger Nav
-                <div onClick={() => setOpenMobileNav(!openMobileNav)} className="cursor-pointer z-10 md:hidden">
-                    { openMobileNav ? <FaBars size={30} /> : <FaBars size={30} /> }
+
+                <div onClick={() => setOpenMobileNav(!openMobileNav)} className="cursor-pointer z-10 sm:hidden px-3">
+                    { openMobileNav ? <FaTimes size={30} /> : <FaBars size={30} /> }
                 </div>
-                <div className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen">
+
+                { openMobileNav && (<div className="w-full h-screen flex flex-col absolute top-0 left-0 justify-center
+                items-center bg-gradient-to-b from-gray-100 to-white">
                     {navItems.map((item) => (
-                        <Link key={item} to={item} smooth={true} duration={500} className="nav-item">
+                        <Link key={item} to={item} smooth={true} duration={700}
+                        onClick={() => setOpenMobileNav(!openMobileNav)} className="mobile-nav-item">
                             {item}
                         </Link>
                     ))}
                     <a href= {resumeLink} target="_blank" rel="noreferrer">
-                        <button className="nav-item">Resume</button>
+                        <button className="resume-btn mt-5"><span>Resume</span></button>
                     </a>
-                </div>
-                */}
+                </div>)}
             </nav>
         </>
     );
