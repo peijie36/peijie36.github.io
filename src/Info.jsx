@@ -1,7 +1,7 @@
 import momentsCover from "src/assets/moments.jpg";
 import placeholder from "src/assets/placeholder.jpg";
 
-const resumeLink = "https://drive.google.com/file/d/1QV0TWZT8Ls_PWRKo3_Q2g9qleE_v2GHt/view?usp=sharing"
+const resumeLink = "https://drive.google.com/file/d/1j-faaDlDb2ilgFUfGVRwE0wU4zHX3QSW/view?usp=sharing"
 
 const languages = [
     { name: "Java", icon: <i className="devicon-java-plain colored"></i> },
@@ -32,11 +32,18 @@ const techTools = [
 
 const projects = [
     {
+        name: "TuneTalk (WIP)",
+        img: placeholder,
+        techStack: ["React", "Django", "Spotify API",],
+        description:
+            "Web application designed to create a collaborative music listening experience. Users can create/join rooms to listen to songs and chat with other users who are in the same room.",
+    },
+    {
         name: "Moments",
         img: momentsCover,
-        techStack: ["React", "Firebase"],
+        techStack: ["React", "Firebase",],
         description:
-            "A responsive web application using React that allows users to view and share photos in real time. Users can browse photos/artworks with the option to filter by categories. Additionally, they can search by specific usernames to view their profiles and portfolios.",
+            "A responsive web application that allows users to view and share photos in real time. Users can browse photos/artworks with the option to filter by categories. Additionally, they can search by specific usernames to view their profiles and portfolios.",
         src: "https://github.com/peijie36/Moments",
     },
 ];

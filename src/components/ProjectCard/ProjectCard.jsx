@@ -20,9 +20,9 @@ const ProjectCard = ( { project } ) => {
                             <li key={uniqid()} className="m-3 p-1 border-2 rounded-md hover:-translate-y-2 duration-150">{tech}</li>
                         ))}
                     </ul>
-                    <a href="https://github.com/peijie36/Moments" target="_blank" rel="noreferrer" className="self-center py-2">
+                    {project.src && (<a href={project.src} target="_blank" rel="noreferrer" className="self-center py-2">
                         <FaGithub size={36} className="hover:scale-125 duration-[125ms]"/>
-                    </a>
+                    </a>)}
                 </div>
             </div>
         </div>
