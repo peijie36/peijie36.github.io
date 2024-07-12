@@ -1,5 +1,12 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
+/**
+ * Functional component for the Home section.
+ * Renders a section with the name, job title, and links to the developer's
+ * GitHub and LinkedIn profiles.
+ *
+ * @returns {JSX.Element} JSX element representing the Home section.
+ */
 const Home = () => {
     return (
         <div name="home" className="w-full h-screen bg-white">
@@ -13,10 +20,10 @@ const Home = () => {
                     Software Developer
                 </h2>
                 <div className="flex flex-row items-center justify-center mt-3">
-                    <a href="https://github.com/peijie36" target="_blank" rel="noreferrer" className="px-[0.35rem]">
+                    <a href="https://github.com/peijie36" target="_blank" rel="noreferrer" className="px-[0.35rem]" aria-label="GitHub">
                         <FaGithub size={36} className="hover:scale-125 duration-[125ms]" />
                     </a>
-                    <a href="https://linkedin.com/in/peijiezheng" target="_blank" rel="noreferrer" className="px-[0.35rem]">
+                    <a href="https://linkedin.com/in/peijiezheng" target="_blank" rel="noreferrer" className="px-[0.35rem]" aria-label="LinkedIn">
                         <FaLinkedin size={36} className="text-[#0072b1] hover:scale-125 duration-[125ms]" />
                     </a>
                 </div>

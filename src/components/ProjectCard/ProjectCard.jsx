@@ -3,6 +3,12 @@ import PropTypes from "prop-types";
 import { FaGithub } from "react-icons/fa";
 {/* import placeholderImg from "src/assets/placeholder.jpg"; */}
 
+/**
+ * Functional component for rendering a project card.
+ *
+ * @param {Object} project - The project object containing details like name, image, description, tech stack, and source code link.
+ * @returns {JSX.Element} JSX element representing the project card with project details.
+ */
 const ProjectCard = ( { project } ) => {
     return (
         <div className="flex flex-col md:flex-row border-4 border-black/10 rounded-lg mb-9">
@@ -20,7 +26,7 @@ const ProjectCard = ( { project } ) => {
                             <li key={uniqid()} className="m-3 p-1 border-2 rounded-md hover:-translate-y-2 duration-150">{tech}</li>
                         ))}
                     </ul>
-                    {project.src && (<a href={project.src} target="_blank" rel="noreferrer" className="self-center py-2">
+                    {project.src && (<a href={project.src} target="_blank" rel="noopener noreferrer"className="self-center py-2">
                         <FaGithub size={36} className="hover:scale-125 duration-[125ms]"/>
                     </a>)}
                 </div>
@@ -35,7 +41,7 @@ ProjectCard.propTypes = {
         img: PropTypes.any,
         techStack: PropTypes.array.isRequired,
         description: PropTypes.string.isRequired,
-        src: PropTypes.string.isRequired,
+        src: PropTypes.string,
     }).isRequired,
 };
 

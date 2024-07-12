@@ -4,11 +4,18 @@ import "./Navbar.css";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
+/**
+ * Functional component representing the navigation bar.
+ * Renders navigation links and a mobile menu toggle.
+ * Uses internal organization modules for styling and functionality.
+ *
+ * @returns {JSX.Element} JSX element representing the Navigation bar
+ */
 const Navbar = () => {
 
     const navItems = ["home", "projects", "skills", "contact"]
 
-     const [openMobileNav, setOpenMobileNav] = useState(false);
+    const [openMobileNav, setOpenMobileNav] = useState(false);
 
     return (
         <>
