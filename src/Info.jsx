@@ -1,5 +1,6 @@
 import momentsCover from "src/assets/moments.jpg";
 import placeholder from "src/assets/placeholder.jpg";
+import noaa from "src/assets/noaa.png";
 
 const resumeLink = "https://drive.google.com/file/d/1j-faaDlDb2ilgFUfGVRwE0wU4zHX3QSW/view?usp=sharing"
 
@@ -32,9 +33,16 @@ const techTools = [
 
 const projects = [
     {
+        name: "NOAA Recruiting Tool",
+        img: noaa,
+        techStack: ["Next.js", "React", "TailwindCSS"],
+        description:
+            "An internal DEI Recruiting Tool for the National Oceanic & Atmospheric Administration (NOAA), enabling NOAA recruiting staff to enhance their target school searches for program candidates and diversify their recruitment efforts across colleges/universities in Washington and California. Features include data display and interactive map",
+    },
+    {
         name: "TuneTalk (WIP)",
         img: placeholder,
-        techStack: ["React", "Django", "Spotify API",],
+        techStack: ["React", "Django", "Spotify API"],
         description:
             "Web application designed to create a collaborative music listening experience. Users can create/join rooms to listen to songs and chat with other users who are in the same room.",
     },
