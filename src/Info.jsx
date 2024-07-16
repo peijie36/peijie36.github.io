@@ -37,7 +37,7 @@ const projects = [
         img: noaa,
         techStack: ["Next.js", "React", "TailwindCSS"],
         description:
-            "An internal DEI Recruiting Tool for the National Oceanic & Atmospheric Administration (NOAA), enabling NOAA recruiting staff to enhance their target school searches for program candidates and diversify their recruitment efforts across colleges/universities in Washington and California. Features include data display and interactive map",
+            "An internal DEI Recruiting Tool for the National Oceanic & Atmospheric Administration (NOAA), enabling NOAA recruiting staff to enhance their target school searches for program candidates and diversify their recruitment efforts across colleges/universities in Washington and California. Features include data display and interactive map.",
     },
     {
         name: "TuneTalk (WIP)",
