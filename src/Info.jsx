@@ -16,8 +16,8 @@ const languages = [
 const webDev = [
     { name: "JavaScript", icon: <i className="devicon-javascript-plain colored"></i> },
     { name: "React", icon: <i className="devicon-react-original colored"></i> },
-    { name: "NodeJS", icon: <i className="devicon-nodejs-plain colored"></i> },
-    { name: "ExpressJS", icon: <i className="devicon-express-original colored"></i> },
+    { name: "Next.js", icon: <i class="devicon-nextjs-plain colored"></i> },
+    { name: "Express", icon: <i className="devicon-express-original colored"></i> },
     { name: "Django", icon: <i className="devicon-django-plain colored"></i> },
     { name: "Tailwind CSS", icon: <i className="devicon-tailwindcss-plain colored"></i> },
 ];
