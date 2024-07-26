@@ -2,7 +2,7 @@ import momentsCover from "src/assets/moments.jpg";
 import placeholder from "src/assets/placeholder.jpg";
 import noaa from "src/assets/noaa.png";
 
-const resumeLink = "https://drive.google.com/file/d/1j-faaDlDb2ilgFUfGVRwE0wU4zHX3QSW/view?usp=sharing"
+const resumeLink = "https://drive.google.com/file/d/1TH6PFnXEdj12XN81xdfjUJVJItg9PrOU/view?usp=sharing"
 
 const languages = [
     { name: "Java", icon: <i className="devicon-java-plain colored"></i> },
