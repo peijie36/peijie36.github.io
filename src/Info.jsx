@@ -3,7 +3,9 @@ import placeholder from "src/assets/placeholder.jpg";
 import noaa from "src/assets/noaa.png";
 
 const resumeLink =
-	"https://drive.google.com/file/d/1TH6PFnXEdj12XN81xdfjUJVJItg9PrOU/view?usp=sharing";
+	"https://drive.google.com/file/d/1XP4VXQPocLhEYEiukjMLJO_Mx-sxEPZL/view?usp=sharing";
+	
+const mailtoLink = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=peijiezheng2001@gmail.com";
 
 const languages = [
 	{ name: "Java", icon: <i className="devicon-java-plain colored"></i> },
@@ -57,4 +59,4 @@ const projects = [
 	},
 ];
 
-export { languages, projects, resumeLink, techTools, webDev };
+export { languages, projects, resumeLink, techTools, webDev, mailtoLink };
