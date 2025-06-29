@@ -1,6 +1,7 @@
-import momentsCover from "src/assets/moments.jpg";
-import placeholder from "src/assets/placeholder.jpg";
-import noaa from "src/assets/noaa.png";
+import momentsCover from "@/assets/moments.jpg";
+import placeholder from "@/assets/placeholder.jpg";
+import noaa from "@/assets/noaa.png";
+import ordersup from "@/assets/ordersup.png";
 
 const resumeLink =
 	"https://drive.google.com/file/d/1XP4VXQPocLhEYEiukjMLJO_Mx-sxEPZL/view?usp=sharing";
@@ -35,6 +36,12 @@ const techTools = [
 ];
 
 const projects = [
+  {
+    name: "Orders Up",
+    img: ordersup,
+    techStack: ["Expo", "Supabase", "StarXpandSDK"],
+    description: "A mobile POS ordering app that helps a local restaurant handle 200+ daily transacitons, simplifying the ordering process and boosting sales.",
+  },
 	{
 		name: "NOAA Recruiting Tool",
 		img: noaa,
