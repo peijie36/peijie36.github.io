@@ -1,4 +1,4 @@
-import momentsCover from "@/assets/moments.jpg";
+import moments from "@/assets/moments.jpg";
 import placeholder from "@/assets/placeholder.jpg";
 import noaa from "@/assets/noaa.png";
 import ordersup from "@/assets/ordersup.png";
@@ -30,18 +30,19 @@ const techTools = [
 	{ name: "Git", icon: <i className="devicon-git-plain colored"></i> },
 	{ name: "MongoDB", icon: <i className="devicon-mongodb-plain colored"></i> },
 	{ name: "Firebase", icon: <i className="devicon-firebase-plain colored"></i> },
-	{ name: "Azure", icon: <i className="devicon-azure-plain colored"></i> },
-	{ name: "SQLite", icon: <i className="devicon-sqlite-plain colored"></i> },
-	{ name: "Jest", icon: <i className="devicon-jest-plain colored"></i> },
+	{ name: "AWS", icon: <i className="devicon-amazonwebservices-plain-wordmark colored"></i> },
+	{ name: "Supabase", icon: <i className="devicon-supabase-plain colored"></i> },
+	{ name: "Vitest", icon: <i className="devicon-vitest-plain colored"></i> },
 ];
 
 const projects = [
-  {
-    name: "Orders Up",
-    img: ordersup,
-    techStack: ["Expo", "Supabase", "StarXpandSDK"],
-    description: "A mobile POS ordering app that helps a local restaurant handle 200+ daily transacitons, simplifying the ordering process and boosting sales.",
-  },
+	{
+		name: "Orders Up",
+		img: ordersup,
+		techStack: ["Expo", "Supabase", "StarXpandSDK"],
+		description:
+			"A mobile POS app built with Expo for a local restaurant, handling 200+ daily transactions. The app streamlines the order checkout process, supports receipt printing, enables menu customization, and tracks local transaction history — enhancing efficiency and boosting sales.",
+	},
 	{
 		name: "NOAA Recruiting Tool",
 		img: noaa,
@@ -58,7 +59,7 @@ const projects = [
 	},
 	{
 		name: "Moments",
-		img: momentsCover,
+		img: moments,
 		techStack: ["React", "Firebase"],
 		description:
 			"A responsive web application that allows users to view and share photos in real time. Users can browse photos/artworks with the option to filter by categories. Additionally, they can search by specific usernames to view their profiles and portfolios.",

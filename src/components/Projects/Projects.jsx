@@ -1,6 +1,5 @@
-import { projects } from "src/Info"
-import ProjectCard from "src/components/ProjectCard/ProjectCard";
-
+import { projects } from "@/src/Info";
+import ProjectCard from "@/src/components/ProjectCard/ProjectCard";
 
 /**
  * Functional component that renders a list of projects.

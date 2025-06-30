@@ -1,5 +1,5 @@
 import { AiOutlineMail } from "react-icons/ai";
-import { mailtoLink } from "src/Info";
+import { mailtoLink } from "@/src/Info";
 
 /**
  * Functional component representing the contact section.

@@ -1,7 +1,6 @@
 import uniqid from "uniqid";
 import PropTypes from "prop-types";
 import { FaGithub } from "react-icons/fa";
-{/* import placeholderImg from "src/assets/placeholder.jpg"; */}
 
 /**
  * Functional component for rendering a project card.

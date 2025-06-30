@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import { resumeLink } from "src/Info";
+import { resumeLink } from "@/src/Info";
 import "./Navbar.css";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
