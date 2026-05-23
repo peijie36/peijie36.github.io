@@ -30,19 +30,24 @@ const Navbar = () => {
                             {item}
                         </Link>
                     ))}
-                    <a href={resumeLink} target="_blank" rel="noreferrer">
-                        <button className="resume-btn">
-                            <span>Resume</span>
-                        </button>
+                    <a href={resumeLink} target="_blank" rel="noreferrer" className="resume-btn">
+                        Resume
                     </a>
                 </div>
 
 
-                <div onClick={() => setOpenMobileNav(!openMobileNav)} className="cursor-pointer z-10 sm:hidden px-3">
+                <button
+                    type="button"
+                    onClick={() => setOpenMobileNav(!openMobileNav)}
+                    className="cursor-pointer z-10 sm:hidden px-3 bg-transparent border-0"
+                    aria-label={openMobileNav ? "Close navigation menu" : "Open navigation menu"}
+                    aria-expanded={openMobileNav}
+                    aria-controls="mobile-navigation"
+                >
                     { openMobileNav ? <FaTimes size={30} /> : <FaBars size={30} /> }
-                </div>
+                </button>
 
-                { openMobileNav && (<div className="w-full h-screen flex flex-col absolute top-0 left-0 justify-center
+                { openMobileNav && (<div id="mobile-navigation" className="w-full h-screen flex flex-col absolute top-0 left-0 justify-center
                 items-center bg-gradient-to-b from-gray-100 to-white">
                     {navItems.map((item) => (
                         <Link key={item} to={item} smooth={true} duration={700}
@@ -50,8 +55,8 @@ const Navbar = () => {
                             {item}
                         </Link>
                     ))}
-                    <a href= {resumeLink} target="_blank" rel="noreferrer">
-                        <button className="resume-btn mt-5"><span>Resume</span></button>
+                    <a href={resumeLink} target="_blank" rel="noreferrer" className="resume-btn mt-5">
+                        Resume
                     </a>
                 </div>)}
             </nav>

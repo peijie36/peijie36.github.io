@@ -50,7 +50,7 @@ const Skills = () => {
 const ListItem = ({ item }) => (
     <li className="list-item">
         <div className="item">
-            {item.icon}
+            <item.Icon aria-hidden="true" className={`text-2xl ${item.iconClass}`} />
             <span className="item-text">
                 {item.name}
             </span>
@@ -60,7 +60,8 @@ const ListItem = ({ item }) => (
 
 ListItem.propTypes = {
     item: PropTypes.shape({
-        icon: PropTypes.any.isRequired,
+        Icon: PropTypes.elementType.isRequired,
+        iconClass: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
     }).isRequired,
 };

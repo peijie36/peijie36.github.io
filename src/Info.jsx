@@ -1,38 +1,52 @@
 import moments from "@/assets/moments.jpg";
 import placeholder from "@/assets/placeholder.jpg";
 import noaa from "@/assets/noaa.png";
-import ordersup from "@/assets/ordersup.png";
+import ordersup from "@/assets/ordersup.jpg";
+import { FaAws, FaCss3Alt, FaGitAlt, FaHtml5, FaJava, FaPython, FaReact } from "react-icons/fa";
+import {
+	SiDjango,
+	SiExpress,
+	SiFirebase,
+	SiGnubash,
+	SiJavascript,
+	SiMongodb,
+	SiNextdotjs,
+	SiSupabase,
+	SiTailwindcss,
+	SiVitest,
+} from "react-icons/si";
 
 const resumeLink =
 	"https://drive.google.com/file/d/1XP4VXQPocLhEYEiukjMLJO_Mx-sxEPZL/view?usp=sharing";
 	
-const mailtoLink = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=peijiezheng2001@gmail.com";
+const emailAddress = "peijiezheng2001@gmail.com";
+const mailtoLink = `mailto:${emailAddress}`;
 
 const languages = [
-	{ name: "Java", icon: <i className="devicon-java-plain colored"></i> },
-	{ name: "JavaScript", icon: <i className="devicon-javascript-plain colored"></i> },
-	{ name: "Python", icon: <i className="devicon-python-plain colored"></i> },
-	{ name: "HTML", icon: <i className="devicon-html5-plain colored"></i> },
-	{ name: "CSS", icon: <i className="devicon-css3-plain colored"></i> },
-	{ name: "Bash", icon: <i className="devicon-bash-plain colored"></i> },
+	{ name: "Java", Icon: FaJava, iconClass: "text-[#f89820]" },
+	{ name: "JavaScript", Icon: SiJavascript, iconClass: "text-[#f7df1e]" },
+	{ name: "Python", Icon: FaPython, iconClass: "text-[#3776ab]" },
+	{ name: "HTML", Icon: FaHtml5, iconClass: "text-[#e34f26]" },
+	{ name: "CSS", Icon: FaCss3Alt, iconClass: "text-[#1572b6]" },
+	{ name: "Bash", Icon: SiGnubash, iconClass: "text-[#4eaa25]" },
 ];
 
 const webDev = [
-	{ name: "JavaScript", icon: <i className="devicon-javascript-plain colored"></i> },
-	{ name: "React", icon: <i className="devicon-react-original colored"></i> },
-	{ name: "Next.js", icon: <i className="devicon-nextjs-plain colored"></i> },
-	{ name: "Express", icon: <i className="devicon-express-original colored"></i> },
-	{ name: "Django", icon: <i className="devicon-django-plain colored"></i> },
-	{ name: "Tailwind CSS", icon: <i className="devicon-tailwindcss-plain colored"></i> },
+	{ name: "JavaScript", Icon: SiJavascript, iconClass: "text-[#f7df1e]" },
+	{ name: "React", Icon: FaReact, iconClass: "text-[#61dafb]" },
+	{ name: "Next.js", Icon: SiNextdotjs, iconClass: "text-black" },
+	{ name: "Express", Icon: SiExpress, iconClass: "text-black" },
+	{ name: "Django", Icon: SiDjango, iconClass: "text-[#092e20]" },
+	{ name: "Tailwind CSS", Icon: SiTailwindcss, iconClass: "text-[#06b6d4]" },
 ];
 
 const techTools = [
-	{ name: "Git", icon: <i className="devicon-git-plain colored"></i> },
-	{ name: "MongoDB", icon: <i className="devicon-mongodb-plain colored"></i> },
-	{ name: "Firebase", icon: <i className="devicon-firebase-plain colored"></i> },
-	{ name: "AWS", icon: <i className="devicon-amazonwebservices-plain-wordmark colored"></i> },
-	{ name: "Supabase", icon: <i className="devicon-supabase-plain colored"></i> },
-	{ name: "Vitest", icon: <i className="devicon-vitest-plain colored"></i> },
+	{ name: "Git", Icon: FaGitAlt, iconClass: "text-[#f05032]" },
+	{ name: "MongoDB", Icon: SiMongodb, iconClass: "text-[#47a248]" },
+	{ name: "Firebase", Icon: SiFirebase, iconClass: "text-[#ffca28]" },
+	{ name: "AWS", Icon: FaAws, iconClass: "text-[#ff9900]" },
+	{ name: "Supabase", Icon: SiSupabase, iconClass: "text-[#3ecf8e]" },
+	{ name: "Vitest", Icon: SiVitest, iconClass: "text-[#6e9f18]" },
 ];
 
 const projects = [
@@ -67,4 +81,4 @@ const projects = [
 	},
 ];
 
-export { languages, projects, resumeLink, techTools, webDev, mailtoLink };
+export { emailAddress, languages, projects, resumeLink, techTools, webDev, mailtoLink };

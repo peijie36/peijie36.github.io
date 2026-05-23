@@ -1,5 +1,5 @@
 import { AiOutlineMail } from "react-icons/ai";
-import { mailtoLink } from "@/src/Info";
+import { emailAddress, mailtoLink } from "@/src/Info";
 
 /**
  * Functional component representing the contact section.
@@ -15,16 +15,13 @@ const Contact = () => {
 			<h2 className="text-xl font-normal mb-3">
 				Feel free to reach out for inquiries, opportunities, or anything else
 			</h2>
-			<a href={mailtoLink} target="_blank" rel="noreferrer">
-				<button
-					className="text-lg font-semibold border-2 border-[#646cff] rounded-full py-2 px-5 hover:scale-105 hover:text-[#646cff] duration-100"
-					aria-label="Email me at peijie36@uw.edu"
-				>
-					<div className="flex flex-row items-start">
-						<AiOutlineMail size={22} className="m-1" />
-						peijiezheng2001@gmail.com
-					</div>
-				</button>
+			<a
+				href={mailtoLink}
+				className="inline-flex flex-row items-start text-lg font-semibold border-2 border-[#646cff] rounded-full py-2 px-5 hover:scale-105 hover:text-[#646cff] duration-100"
+				aria-label={`Email me at ${emailAddress}`}
+			>
+				<AiOutlineMail size={22} className="m-1" />
+				{emailAddress}
 			</a>
 		</section>
 	);
