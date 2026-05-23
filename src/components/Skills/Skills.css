@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 @layer components {
+  .skills-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 min-h-full mb-36 sm:mb-48;
+  }
+
   .column-container {
-    @apply block border border-black rounded-lg m-3 max-md:w-80 w-96;
+    @apply block border border-black rounded-lg w-full max-w-xs mx-auto bg-white text-black;
   }
 
   .container-header {

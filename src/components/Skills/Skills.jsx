@@ -1,10 +1,10 @@
-import { languages, webDev, techTools } from "@/src/Info";
+import { skillSections } from "@/src/Info";
 import PropTypes from "prop-types";
 import "./Skills.css";
 
 /**
  * Functional component representing the Skills section.
- * Renders a list of languages, web development tools, and technologies.
+ * Renders grouped technology skills from the resume.
  *
  * @returns {JSX.Element} JSX element representing the skills section
  */
@@ -14,34 +14,17 @@ const Skills = () => {
             <h2 className="text-3xl text-left font-semibold text-[#646cff] mb-7 mr-32 underline underline-offset-8">
                 SKILLS
             </h2>
-            <div className="flex flex-col max-md:items-center md:flex-row min-h-full mb-36 sm:mb-48">
-                {/* Languages column */}
-                <div className="column-container">
-                    <h3 className="container-header">Languages</h3>
-                    <ul className="flex flex-col mb-7 list-outside">
-                        {languages.map((language) => (
-                            <ListItem key={language.name} item={language} />
-                        ))}
-                    </ul>
-                </div>
-                {/* Web Development column */}
-                <div className="column-container mx-16">
-                    <h3 className="container-header">Web Development</h3>
-                    <ul className="mb-7">
-                        {webDev.map((tool) => (
-                            <ListItem key={tool.name} item={tool} />
-                        ))}
-                    </ul>
-                </div>
-                {/* Technologies column */}
-                <div className="column-container">
-                    <h3 className="container-header">Technologies</h3>
-                    <ul className="mb-7">
-                        {techTools.map((tool) => (
-                            <ListItem key={tool.name} item={tool} />
-                        ))}
-                    </ul>
-                </div>
+            <div className="skills-grid">
+                {skillSections.map((section) => (
+                    <div className="column-container" key={section.title}>
+                        <h3 className="container-header">{section.title}</h3>
+                        <ul className="mb-7">
+                            {section.items.map((item) => (
+                                <ListItem key={item.name} item={item} />
+                            ))}
+                        </ul>
+                    </div>
+                ))}
             </div>
         </div>
     );
