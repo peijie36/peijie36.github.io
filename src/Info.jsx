@@ -75,7 +75,7 @@ const projects = [
 		src: "https://github.com/peijie36/ReceiptSplitter",
 	},
 	{
-		name: "TuneTalk (WIP)",
+		name: "TuneTalk",
 		img: placeholder,
 		techStack: ["Next.js", "Hono", "PostgreSQL"],
 		description:
