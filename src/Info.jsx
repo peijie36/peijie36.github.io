@@ -67,11 +67,28 @@ const skillSections = [
 
 const projects = [
 	{
+		name: "ReceiptSplitter",
+		img: placeholder,
+		techStack: ["React", "TypeScript", "Vite"],
+		description:
+			"A local-first web app for splitting receipts when one person paid the bill. Users can add participants, choose the payer, split by assigned items or the whole bill, allocate tax and tip equally or proportionally, save local split snapshots, mark repayments as paid, and copy payment summaries.",
+		src: "https://github.com/peijie36/ReceiptSplitter",
+	},
+	{
+		name: "TuneTalk (WIP)",
+		img: placeholder,
+		techStack: ["Next.js", "Hono", "PostgreSQL"],
+		description:
+			"A realtime social listening platform for shared music rooms with synced playback, live chat, presence, and Audius-powered queues. The Turborepo app lets users create public or private rooms, join sessions, queue tracks, and chat while a Hono API manages authentication, room lifecycle, playback updates, queue changes, and WebSocket fan-out.",
+		src: "https://github.com/peijie36/TuneTalk",
+	},
+	{
 		name: "Orders Up",
 		img: ordersup,
-		techStack: ["Expo", "Supabase", "StarXpandSDK"],
+		techStack: ["Expo", "React Native", "Supabase"],
 		description:
-			"A mobile POS app built with Expo for a local restaurant, handling 200+ daily transactions. The app streamlines the order checkout process, supports receipt printing, enables menu customization, and tracks local transaction history — enhancing efficiency and boosting sales.",
+			"A lightweight mobile ordering app for small restaurants that need faster order entry, receipt printing, and menu management without adopting a full POS system. Built with Expo React Native, it supports order totals with tax and card fees, customer and kitchen receipt printing, menu customization, local settings persistence, and Supabase-backed transaction and analytics data.",
+		src: "https://github.com/peijie36/OrdersUp",
 	},
 	{
 		name: "NOAA Recruiting Tool",
@@ -79,13 +96,6 @@ const projects = [
 		techStack: ["Next.js", "React", "TailwindCSS"],
 		description:
 			"An internal DEI Recruiting Tool for the National Oceanic & Atmospheric Administration (NOAA), enabling NOAA recruiting staff to enhance their target school searches for program candidates and diversify their recruitment efforts across colleges/universities in Washington and California. Features include data display and interactive map.",
-	},
-	{
-		name: "TuneTalk (WIP)",
-		img: placeholder,
-		techStack: ["React", "Django", "Spotify API"],
-		description:
-			"Web application designed to create a collaborative music listening experience. Users can create/join rooms to listen to songs and chat with other users who are in the same room.",
 	},
 	{
 		name: "Moments",
