@@ -1,7 +1,7 @@
 import moments from "@/assets/moments.jpg";
-import placeholder from "@/assets/placeholder.jpg";
-import noaa from "@/assets/noaa.png";
 import ordersup from "@/assets/ordersup.jpg";
+import receiptSplitter from "@/assets/receipt-splitter.png";
+import tunetalk from "@/assets/tunetalk.png";
 import { FaDatabase, FaFireAlt, FaGitAlt, FaPython, FaReact } from "react-icons/fa";
 import { GiBearFace } from "react-icons/gi";
 import {
@@ -68,7 +68,7 @@ const skillSections = [
 const projects = [
 	{
 		name: "ReceiptSplitter",
-		img: placeholder,
+		img: receiptSplitter,
 		techStack: ["React", "TypeScript", "Vite"],
 		description:
 			"A local-first web app for splitting receipts when one person paid the bill. Users can add participants, choose the payer, split by assigned items or the whole bill, allocate tax and tip equally or proportionally, save local split snapshots, mark repayments as paid, and copy payment summaries.",
@@ -76,7 +76,7 @@ const projects = [
 	},
 	{
 		name: "TuneTalk",
-		img: placeholder,
+		img: tunetalk,
 		techStack: ["Next.js", "Hono", "PostgreSQL"],
 		description:
 			"A realtime social listening platform for shared music rooms with synced playback, live chat, presence, and Audius-powered queues. The Turborepo app lets users create public or private rooms, join sessions, queue tracks, and chat while a Hono API manages authentication, room lifecycle, playback updates, queue changes, and WebSocket fan-out.",
@@ -89,13 +89,6 @@ const projects = [
 		description:
 			"A lightweight mobile ordering app for small restaurants that need faster order entry, receipt printing, and menu management without adopting a full POS system. Built with Expo React Native, it supports order totals with tax and card fees, customer and kitchen receipt printing, menu customization, local settings persistence, and Supabase-backed transaction and analytics data.",
 		src: "https://github.com/peijie36/OrdersUp",
-	},
-	{
-		name: "NOAA Recruiting Tool",
-		img: noaa,
-		techStack: ["Next.js", "React", "TailwindCSS"],
-		description:
-			"An internal DEI Recruiting Tool for the National Oceanic & Atmospheric Administration (NOAA), enabling NOAA recruiting staff to enhance their target school searches for program candidates and diversify their recruitment efforts across colleges/universities in Washington and California. Features include data display and interactive map.",
 	},
 	{
 		name: "Moments",
