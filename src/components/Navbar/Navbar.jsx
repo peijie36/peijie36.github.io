@@ -21,9 +21,18 @@ const Navbar = () => {
         <>
             <nav className="fixed left-0 right-0 top-0 z-10 border-b border-slate-200/80 bg-white/90 shadow-sm backdrop-blur-md">
                 <div className="section-shell flex items-center justify-between py-3">
-                    <h3 className="px-0 text-4xl font-bold text-[#646cff] sm:text-5xl">
-                        PJ
-                    </h3>
+                    <Link
+                        to="home"
+                        smooth={true}
+                        duration={500}
+                        offset={-76}
+                        className="brand-link"
+                        aria-label="Go to home section"
+                    >
+                        <span className="brand-mark" aria-hidden="true">
+                            <span className="brand-initials">PZ</span>
+                        </span>
+                    </Link>
                     <div className="hidden items-center space-x-7 sm:flex">
                         {navItems.map((item) => (
                             <Link key={item} to={item} smooth={true} duration={500} offset={-76} className="nav-item">

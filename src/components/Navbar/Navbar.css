@@ -3,6 +3,21 @@
 @tailwind utilities;
 
 @layer components {
+    .brand-link {
+        @apply inline-flex cursor-pointer items-center rounded-md;
+    }
+    .brand-mark {
+        @apply relative inline-flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl border border-slate-300 bg-white shadow-sm transition-colors duration-150;
+    }
+    .brand-link:hover .brand-mark {
+        @apply border-[#646cff];
+    }
+    .brand-mark::before {
+        @apply absolute h-1 w-11 -rotate-45 rounded-full bg-[#646cff]/20 content-[''];
+    }
+    .brand-initials {
+        @apply relative text-[1.15rem] font-black leading-none text-[#646cff];
+    }
     .nav-item {
         @apply relative cursor-pointer capitalize text-[1.05rem] font-semibold text-slate-600 transition-colors duration-150 hover:text-[#646cff];
     }
