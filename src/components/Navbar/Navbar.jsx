@@ -19,38 +19,39 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="flex max-sm:justify-between justify-around items-center py-3 bg-white/80 backdrop-blur-md
-            shadow-md fixed w-full top-0 left-0 right-0 z-10">
-                <h3 className="text-5xl font-semibold text-[#646cff] px-3">
-                    PJ
-                </h3>
-                <div className="hidden items-center space-x-7 sm:flex px-3">
-                    {navItems.map((item) => (
-                        <Link key={item} to={item} smooth={true} duration={500} className="nav-item">
-                            {item}
-                        </Link>
-                    ))}
-                    <a href={resumeLink} target="_blank" rel="noreferrer" className="resume-btn">
-                        Resume
-                    </a>
+            <nav className="fixed left-0 right-0 top-0 z-10 border-b border-slate-200/80 bg-white/90 shadow-sm backdrop-blur-md">
+                <div className="section-shell flex items-center justify-between py-3">
+                    <h3 className="px-0 text-4xl font-bold text-[#646cff] sm:text-5xl">
+                        PJ
+                    </h3>
+                    <div className="hidden items-center space-x-7 sm:flex">
+                        {navItems.map((item) => (
+                            <Link key={item} to={item} smooth={true} duration={500} offset={-76} className="nav-item">
+                                {item}
+                            </Link>
+                        ))}
+                        <a href={resumeLink} target="_blank" rel="noreferrer" className="resume-btn">
+                            Resume
+                        </a>
+                    </div>
+
+
+                    <button
+                        type="button"
+                        onClick={() => setOpenMobileNav(!openMobileNav)}
+                        className="z-10 cursor-pointer rounded-md border-0 bg-transparent p-2 text-slate-900 sm:hidden"
+                        aria-label={openMobileNav ? "Close navigation menu" : "Open navigation menu"}
+                        aria-expanded={openMobileNav}
+                        aria-controls="mobile-navigation"
+                    >
+                        { openMobileNav ? <FaTimes size={30} /> : <FaBars size={30} /> }
+                    </button>
                 </div>
-
-
-                <button
-                    type="button"
-                    onClick={() => setOpenMobileNav(!openMobileNav)}
-                    className="cursor-pointer z-10 sm:hidden px-3 bg-transparent border-0"
-                    aria-label={openMobileNav ? "Close navigation menu" : "Open navigation menu"}
-                    aria-expanded={openMobileNav}
-                    aria-controls="mobile-navigation"
-                >
-                    { openMobileNav ? <FaTimes size={30} /> : <FaBars size={30} /> }
-                </button>
 
                 { openMobileNav && (<div id="mobile-navigation" className="w-full h-screen flex flex-col absolute top-0 left-0 justify-center
                 items-center bg-gradient-to-b from-gray-100 to-white">
                     {navItems.map((item) => (
-                        <Link key={item} to={item} smooth={true} duration={700}
+                        <Link key={item} to={item} smooth={true} duration={700} offset={-76}
                         onClick={() => setOpenMobileNav(!openMobileNav)} className="mobile-nav-item">
                             {item}
                         </Link>

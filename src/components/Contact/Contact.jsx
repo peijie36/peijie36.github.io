@@ -10,19 +10,22 @@ import { emailAddress, mailtoLink } from "@/src/Info";
 const Contact = () => {
     
     return (
-		<section name="contact" className="sm:pt-16 pb-7">
-			<h1 className="text-5xl font-semibold mb-2">Get In Touch!</h1>
-			<h2 className="text-xl font-normal mb-3">
-				Feel free to reach out for inquiries, opportunities, or anything else
-			</h2>
-			<a
-				href={mailtoLink}
-				className="inline-flex flex-row items-start text-lg font-semibold border-2 border-[#646cff] rounded-full py-2 px-5 hover:scale-105 hover:text-[#646cff] duration-100"
-				aria-label={`Email me at ${emailAddress}`}
-			>
-				<AiOutlineMail size={22} className="m-1" />
-				{emailAddress}
-			</a>
+		<section name="contact" className="scroll-mt-24 bg-slate-50 py-20">
+			<div className="section-shell text-center">
+				<p className="text-sm font-bold uppercase tracking-[0.2em] text-[#646cff]">Contact</p>
+				<h2 className="mt-3 text-4xl font-bold text-slate-950 sm:text-5xl">Get In Touch</h2>
+				<p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
+					Feel free to reach out for inquiries, opportunities, or anything else.
+				</p>
+				<a
+					href={mailtoLink}
+					className="mt-8 inline-flex max-w-full flex-row items-center gap-2 rounded-md bg-[#646cff] px-5 py-3 text-base font-semibold text-white shadow-sm transition-colors duration-150 hover:bg-[#535bf2] sm:text-lg"
+					aria-label={`Email me at ${emailAddress}`}
+				>
+					<AiOutlineMail size={22} aria-hidden="true" />
+					<span className="break-all">{emailAddress}</span>
+				</a>
+			</div>
 		</section>
 	);
 };

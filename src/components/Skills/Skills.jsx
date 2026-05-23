@@ -10,23 +10,25 @@ import "./Skills.css";
  */
 const Skills = () => {
     return (
-        <div name="skills" className="flex flex-col pt-20 mt-5 justify-normal w-12/13">
-            <h2 className="text-3xl text-left font-semibold text-[#646cff] mb-7 mr-32 underline underline-offset-8">
-                SKILLS
-            </h2>
-            <div className="skills-grid">
-                {skillSections.map((section) => (
-                    <div className="column-container" key={section.title}>
-                        <h3 className="container-header">{section.title}</h3>
-                        <ul className="mb-7">
-                            {section.items.map((item) => (
-                                <ListItem key={item.name} item={item} />
-                            ))}
-                        </ul>
-                    </div>
-                ))}
+        <section name="skills" className="scroll-mt-24 bg-white py-20 sm:py-24">
+            <div className="section-shell">
+                <h2 className="section-heading mb-10">
+                    SKILLS
+                </h2>
+                <div className="skills-grid">
+                    {skillSections.map((section) => (
+                        <section className="column-container" key={section.title}>
+                            <h3 className="container-header">{section.title}</h3>
+                            <ul className="space-y-2">
+                                {section.items.map((item) => (
+                                    <ListItem key={item.name} item={item} />
+                                ))}
+                            </ul>
+                        </section>
+                    ))}
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 

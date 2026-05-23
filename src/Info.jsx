@@ -67,28 +67,28 @@ const skillSections = [
 
 const projects = [
 	{
-		name: "ReceiptSplitter",
-		img: receiptSplitter,
-		techStack: ["React", "TypeScript", "Vite"],
+		name: "Orders Up",
+		img: ordersup,
+		techStack: ["Expo", "React Native", "Supabase", "StarXpand SDK"],
 		description:
-			"A local-first web app for splitting receipts when one person paid the bill. Users can add participants, choose the payer, split by assigned items or the whole bill, allocate tax and tip equally or proportionally, save local split snapshots, mark repayments as paid, and copy payment summaries.",
-		src: "https://github.com/peijie36/ReceiptSplitter",
+			"A lightweight mobile ordering app for small restaurants that need faster order entry, receipt printing, and menu management without adopting a full POS system. Built with React Native, it supports order totals with tax and card fees, customer and kitchen receipt printing, menu customization, local settings persistence, and transaction/order analytics data.",
+		src: "https://github.com/peijie36/OrdersUp",
 	},
 	{
 		name: "TuneTalk",
 		img: tunetalk,
-		techStack: ["Next.js", "Hono", "PostgreSQL"],
+		techStack: ["Next.js", "Hono", "PostgreSQL", "WebSockets", "Docker"],
 		description:
-			"A realtime social listening platform for shared music rooms with synced playback, live chat, presence, and Audius-powered queues. The Turborepo app lets users create public or private rooms, join sessions, queue tracks, and chat while a Hono API manages authentication, room lifecycle, playback updates, queue changes, and WebSocket fan-out.",
+			"A realtime social listening platform for shared music rooms with synced playback, live chat, presence, and Audius-powered queues. The app lets users create public or private rooms, join sessions, queue tracks, and chat while a Hono API manages authentication, room lifecycle, playback updates, queue changes, and WebSocket for real-time support.",
 		src: "https://github.com/peijie36/TuneTalk",
 	},
 	{
-		name: "Orders Up",
-		img: ordersup,
-		techStack: ["Expo", "React Native", "Supabase"],
+		name: "ReceiptSplitter",
+		img: receiptSplitter,
+		techStack: ["React", "TypeScript", "Zustand", "Vitest", "Playwright"],
 		description:
-			"A lightweight mobile ordering app for small restaurants that need faster order entry, receipt printing, and menu management without adopting a full POS system. Built with Expo React Native, it supports order totals with tax and card fees, customer and kitchen receipt printing, menu customization, local settings persistence, and Supabase-backed transaction and analytics data.",
-		src: "https://github.com/peijie36/OrdersUp",
+			"A local-first web app for splitting receipts when one person paid the bill. Users can add participants, choose the payer, split by assigned items or the whole bill, allocate tax and tip equally or proportionally, save local split snapshots, mark repayments as paid, and copy payment summaries.",
+		src: "https://github.com/peijie36/ReceiptSplitter",
 	},
 	{
 		name: "Moments",

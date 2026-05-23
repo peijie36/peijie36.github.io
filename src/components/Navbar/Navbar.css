@@ -4,14 +4,13 @@
 
 @layer components {
     .nav-item {
-        @apply capitalize text-[1.05rem] text-gray-600 font-semibold cursor-pointer hover:text-[#646cff] hover:scale-105 transition-transform duration-150;
+        @apply relative cursor-pointer capitalize text-[1.05rem] font-semibold text-slate-600 transition-colors duration-150 hover:text-[#646cff];
     }
     .resume-btn {
-        @apply capitalize text-gray-600 font-semibold hover:text-[#646cff] hover:scale-105 cursor-pointer transition-all duration-150
-        bg-transparent border-2 border-[#646cff] rounded-md py-2 px-4;
+        @apply cursor-pointer rounded-md border-2 border-[#646cff] bg-white px-4 py-2 font-semibold capitalize text-[#646cff] transition-colors duration-150 hover:bg-[#646cff] hover:text-white;
     }
     .mobile-nav-item {
-        @apply capitalize text-gray-600 text-lg font-bold py-[0.35rem]
+        @apply cursor-pointer py-2 text-lg font-bold capitalize text-slate-600 transition-colors duration-150 hover:text-[#646cff];
     }
 }
 

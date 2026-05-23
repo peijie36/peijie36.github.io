@@ -7,5 +7,29 @@
 @layer base {
     html {
         font-family: 'Raleway', sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-slate-50 text-slate-950 antialiased;
+    }
+
+    a,
+    button {
+        @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#646cff];
+    }
+}
+
+@layer components {
+    .section-shell {
+        @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+    }
+
+    .section-heading {
+        @apply text-left text-3xl font-bold tracking-normal text-[#646cff];
+    }
+
+    .section-heading::after {
+        @apply mt-3 block h-1 w-16 rounded-full bg-[#646cff] content-[''];
     }
 }
